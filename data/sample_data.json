@@ -1,0 +1,87 @@
+{
+    "Ecological Momentary Assessment": {
+      "EMA":{
+        "Configuration File": true,
+        "Question Window": {"Past Week":{"Past Week":{}}},
+        "Device" :{"iPhone":{"iPhone":{}}},
+        "Category": [{"Sleep":{}}]
+       }
+      },
+    "Input Data Collection": {
+        "Collection ": {
+          "Collection Site": "veniam consequat cupidatat ullamco sint",
+          "Study Name": "ea in dolore",
+          "Study Site":{"Helsinki-Alto":{}}
+        },
+        "Category of Data": {"Modality":{"Digital":{}}}
+      },
+    "Site": {
+      "institution":{
+        "PI":"Dr.Janos",
+        "siteId":"37235",
+        "name":{"Stanford University":{}}}
+      },
+    "Collection Timing": {
+      "CollectionTime": {
+        "Collection Phase":{"Mid":{}},
+        "Collection Event":{"Pre-Scan":{}},
+        "Start Time": "sun",
+        "End Time": "sed",
+        "Collection Duration": {
+          "Other": {
+            "value": "aute cillum"
+          }
+        }
+      }
+    },
+    "Participant ": {
+      "Participant":{
+        "ParticipantID":"IDnumber",
+        "ParticipantStatus":{"Dropout":{}}
+      },
+      "Clinical":{
+        "Length of current MDE": 1.1,
+        "No. of prior MDEs":0,
+        "Baseline QIDS score": 1,
+        "Age at MDD onset": 2
+      },
+      "Risk factors":{
+        "Stressful life events": "stress",
+        "Parental bonding": " ",
+        "Personality": "",
+        "Social life": "",
+        "Childhood sexual abuse": "",
+        "Childhood physical abuse": "",
+        "Childhood trauma":"",
+        "Positive Family History": ""
+      },
+      "Treatment History":{
+        "Previous Treatment":{"UNKNOWN":{}},
+        "Outcome":"nONE"
+      },
+      "Current Treatment":{"Treatment Type":[{"Ketamin Infusion":{}}]},
+      "Social":{
+        "ZIP": "{        }",
+        "Adversity Index": "",
+        "Years of education": 7,
+        "Occupation": "",
+        "Children": 7,
+        "Country": "",
+        "State":""
+      },
+      "Demographics": {
+        "Race":{"Other":{}},
+        "Age": 40444762,
+        "Sexual Orientation":{"Something else":{}},
+        "Marital Status":{"Did not Answer/Unknown":{}},
+        "Family Income": "adipisicing sit sint culpa nisi",
+        "Sex at Birth":{"Female":{}},
+        "Gender":{"Female-to-Male":{}}
+      },
+      "Physical":{
+        "Handidness":{"Left":{}},
+        "Height in Inches":90.1,
+        "Weight in Pounds":120.9
+      }
+    }
+  }

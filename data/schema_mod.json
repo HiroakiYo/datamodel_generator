@@ -5,7 +5,7 @@
         "Ecological Momentary Assessment": {
             "type": "object",
             "properties": {
-                "EMA": {
+                "EMA_Schema": {
                     "title": "EMA",
                     "type": "object",
                     "properties": {
@@ -50,7 +50,7 @@
                                     "title": "Now",
                                     "type": "object",
                                     "properties": {
-                                        "Now": {
+                                        "Now_Schema": {
                                             "title": "Now",
                                             "type": "object",
                                             "properties": {},
@@ -76,7 +76,7 @@
                                 }
                             ]
                         },
-                        "Device": {
+                        "Device_Schema": {
                             "title": "Device",
                             "type": "object",
                             "anyOf": [
@@ -84,7 +84,7 @@
                                     "title": "iPhone",
                                     "type": "object",
                                     "properties": {
-                                        "iPhone": {
+                                        "iPhone_Schema": {
                                             "title": "iPhone",
                                             "type": "object",
                                             "properties": {},
@@ -98,7 +98,7 @@
                                     "title": "Android",
                                     "type": "object",
                                     "properties": {
-                                        "Android": {
+                                        "Android_Schema": {
                                             "title": "Android",
                                             "type": "object",
                                             "properties": {},
@@ -110,10 +110,9 @@
                                 }
                             ]
                         },
-                        "Category": {
+                        "Category_Schema": {
                             "title": "Category",
                             "type": "array",
-                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "anyOf": [
@@ -121,7 +120,7 @@
                                         "title": "Sleep",
                                         "type": "object",
                                         "properties": {
-                                            "Sleep": {
+                                            "Sleep_Schema": {
                                                 "title": "Sleep",
                                                 "type": "object",
                                                 "properties": {},
@@ -135,7 +134,7 @@
                                         "title": "Activity",
                                         "type": "object",
                                         "properties": {
-                                            "Activity": {
+                                            "Activity_Schema": {
                                                 "title": "Activity",
                                                 "type": "object",
                                                 "properties": {},
@@ -149,7 +148,7 @@
                                         "title": "Suicide",
                                         "type": "object",
                                         "properties": {
-                                            "Suicide": {
+                                            "Suicide_Schema": {
                                                 "title": "Suicide",
                                                 "type": "object",
                                                 "properties": {},
@@ -163,7 +162,7 @@
                                         "title": "Emotion",
                                         "type": "object",
                                         "properties": {
-                                            "Emotion": {
+                                            "Emotion_Schema": {
                                                 "title": "Emotion",
                                                 "type": "object",
                                                 "properties": {},
@@ -177,7 +176,7 @@
                                         "title": "Anhedonia",
                                         "type": "object",
                                         "properties": {
-                                            "Anhedonia": {
+                                            "Anhedonia_Schema": {
                                                 "title": "Anhedonia",
                                                 "type": "object",
                                                 "properties": {},
@@ -191,7 +190,7 @@
                                         "title": "Social",
                                         "type": "object",
                                         "properties": {
-                                            "Social": {
+                                            "Social_Schema": {
                                                 "title": "Social",
                                                 "type": "object",
                                                 "properties": {},
@@ -204,7 +203,8 @@
                                 ],
                                 "default": {
                                     "Sleep": {}
-                                }
+                                },
+                                "title": "items"
                             }
                         }
                     },
@@ -212,7 +212,8 @@
                     "additionalProperties": false
                 }
             },
-            "required": []
+            "required": [],
+            "title": "Ecological Momentary Assessment"
         },
         "Input Data Collection": {
             "type": "object",
@@ -237,7 +238,7 @@
                                     "title": "Helsinki-Alto",
                                     "type": "object",
                                     "properties": {
-                                        "Helsinki-Alto": {
+                                        "Helsinki-Alto_Schema": {
                                             "title": "Helsinki-Alto",
                                             "type": "object",
                                             "properties": {},
@@ -251,7 +252,7 @@
                                     "title": "Vanderbilt",
                                     "type": "object",
                                     "properties": {
-                                        "Vanderbilt": {
+                                        "Vanderbilt_Schema": {
                                             "title": "Vanderbilt",
                                             "type": "object",
                                             "properties": {},
@@ -265,7 +266,7 @@
                                     "title": "VUMC",
                                     "type": "object",
                                     "properties": {
-                                        "VUMC": {
+                                        "VUMC_Schema": {
                                             "title": "VUMC",
                                             "type": "object",
                                             "properties": {},
@@ -279,7 +280,7 @@
                                     "title": "UCLA",
                                     "type": "object",
                                     "properties": {
-                                        "UCLA": {
+                                        "UCLA_Schema": {
                                             "title": "UCLA",
                                             "type": "object",
                                             "properties": {},
@@ -293,7 +294,7 @@
                                     "title": "McLean",
                                     "type": "object",
                                     "properties": {
-                                        "McLean": {
+                                        "McLean_Schema": {
                                             "title": "McLean",
                                             "type": "object",
                                             "properties": {},
@@ -307,7 +308,7 @@
                                     "title": "Cornell",
                                     "type": "object",
                                     "properties": {
-                                        "Cornell": {
+                                        "Cornell_Schema": {
                                             "title": "Cornell",
                                             "type": "object",
                                             "properties": {},
@@ -321,7 +322,7 @@
                                     "title": "UCSD",
                                     "type": "object",
                                     "properties": {
-                                        "UCSD": {
+                                        "UCSD_Schema": {
                                             "title": "UCSD",
                                             "type": "object",
                                             "properties": {},
@@ -335,7 +336,7 @@
                                     "title": "Stanford",
                                     "type": "object",
                                     "properties": {
-                                        "Stanford": {
+                                        "Stanford_Schema": {
                                             "title": "Stanford",
                                             "type": "object",
                                             "properties": {},
@@ -349,7 +350,7 @@
                                     "title": "MSSM-Mayberg",
                                     "type": "object",
                                     "properties": {
-                                        "MSSM-Mayberg": {
+                                        "MSSM-Mayberg_Schema": {
                                             "title": "MSSM-Mayberg",
                                             "type": "object",
                                             "properties": {},
@@ -363,7 +364,7 @@
                                     "title": "MSSM-Murrough",
                                     "type": "object",
                                     "properties": {
-                                        "MSSM-Murrough": {
+                                        "MSSM-Murrough_Schema": {
                                             "title": "MSSM-Murrough",
                                             "type": "object",
                                             "properties": {},
@@ -377,7 +378,7 @@
                                     "title": "Princeton",
                                     "type": "object",
                                     "properties": {
-                                        "Princeton": {
+                                        "Princeton_Schema": {
                                             "title": "Princeton",
                                             "type": "object",
                                             "properties": {},
@@ -391,7 +392,7 @@
                                     "title": "Pittsburgh",
                                     "type": "object",
                                     "properties": {
-                                        "Pittsburgh": {
+                                        "Pittsburgh_Schema": {
                                             "title": "Pittsburgh",
                                             "type": "object",
                                             "properties": {},
@@ -411,7 +412,7 @@
                     "title": "Category of Data",
                     "type": "object",
                     "properties": {
-                        "Modality": {
+                        "Modality_Schema": {
                             "title": "Modality",
                             "type": "object",
                             "anyOf": [
@@ -433,7 +434,7 @@
                                     "title": "Psychometrics",
                                     "type": "object",
                                     "properties": {
-                                        "Psychometrics": {
+                                        "Psychometrics_Schema": {
                                             "title": "Psychometrics",
                                             "type": "object",
                                             "properties": {},
@@ -475,7 +476,7 @@
                                     "title": "Genetics",
                                     "type": "object",
                                     "properties": {
-                                        "Genetics": {
+                                        "Genetics_Schema": {
                                             "title": "Genetics",
                                             "type": "object",
                                             "properties": {},
@@ -559,7 +560,7 @@
                                     "title": "MRI",
                                     "type": "object",
                                     "properties": {
-                                        "MRI": {
+                                        "MRI_Schema": {
                                             "title": "MRI",
                                             "type": "object",
                                             "properties": {},
@@ -573,7 +574,7 @@
                                     "title": "EEG",
                                     "type": "object",
                                     "properties": {
-                                        "EEG": {
+                                        "EEG_Schema": {
                                             "title": "EEG",
                                             "type": "object",
                                             "properties": {},
@@ -604,24 +605,25 @@
                     "additionalProperties": false
                 }
             },
-            "required": []
+            "required": [],
+            "title": "Input Data Collection"
         },
-        "Site": {
+        "Site ": {
             "type": "object",
             "properties": {
-                "institution": {
+                "institution_Schema": {
                     "title": "institution",
                     "type": "object",
                     "properties": {
-                        "PI": {
+                        "PI_Schema": {
                             "title": "PI",
                             "type": "string"
                         },
-                        "siteId": {
+                        "siteId_Schema": {
                             "title": "siteId",
                             "type": "string"
                         },
-                        "name": {
+                        "name_Schema": {
                             "title": "name",
                             "type": "object",
                             "anyOf": [
@@ -856,12 +858,13 @@
                     "additionalProperties": false
                 }
             },
-            "required": []
+            "required": [],
+            "title": "Site "
         },
         "Collection Timing": {
             "type": "object",
             "properties": {
-                "CollectionTime": {
+                "CollectionTime_Schema": {
                     "title": "CollectionTime",
                     "type": "object",
                     "properties": {
@@ -873,7 +876,7 @@
                                     "title": "Other",
                                     "type": "object",
                                     "properties": {
-                                        "Other": {
+                                        "Other_Schema": {
                                             "title": "Other",
                                             "type": "object",
                                             "properties": {},
@@ -887,7 +890,7 @@
                                     "title": "Mid",
                                     "type": "object",
                                     "properties": {
-                                        "Mid": {
+                                        "Mid_Schema": {
                                             "title": "Mid",
                                             "type": "object",
                                             "properties": {},
@@ -901,7 +904,7 @@
                                     "title": "Post",
                                     "type": "object",
                                     "properties": {
-                                        "Post": {
+                                        "Post_Schema": {
                                             "title": "Post",
                                             "type": "object",
                                             "properties": {},
@@ -915,7 +918,7 @@
                                     "title": "Baseline",
                                     "type": "object",
                                     "properties": {
-                                        "Baseline": {
+                                        "Baseline_Schema": {
                                             "title": "Baseline",
                                             "type": "object",
                                             "properties": {},
@@ -935,7 +938,7 @@
                                     "title": "Pre-Scan",
                                     "type": "object",
                                     "properties": {
-                                        "Pre-Scan": {
+                                        "Pre-Scan_Schema": {
                                             "title": "Pre-Scan",
                                             "type": "object",
                                             "properties": {},
@@ -949,7 +952,7 @@
                                     "title": "Admission",
                                     "type": "object",
                                     "properties": {
-                                        "Admission": {
+                                        "Admission_Schema": {
                                             "title": "Admission",
                                             "type": "object",
                                             "properties": {},
@@ -991,7 +994,7 @@
                                     "title": "Discharge",
                                     "type": "object",
                                     "properties": {
-                                        "Discharge": {
+                                        "Discharge_Schema": {
                                             "title": "Discharge",
                                             "type": "object",
                                             "properties": {},
@@ -1005,7 +1008,7 @@
                                     "title": "Follow-up",
                                     "type": "object",
                                     "properties": {
-                                        "Follow-up": {
+                                        "Follow-up_Schema": {
                                             "title": "Follow-up",
                                             "type": "object",
                                             "properties": {},
@@ -1019,7 +1022,7 @@
                                     "title": "Enrollment",
                                     "type": "object",
                                     "properties": {
-                                        "Enrollment": {
+                                        "Enrollment_Schema": {
                                             "title": "Enrollment",
                                             "type": "object",
                                             "properties": {},
@@ -1047,7 +1050,7 @@
                                     "title": "Scan",
                                     "type": "object",
                                     "properties": {
-                                        "Scan": {
+                                        "Scan_Schema": {
                                             "title": "Scan",
                                             "type": "object",
                                             "properties": {},
@@ -1061,7 +1064,7 @@
                                     "title": "Screening",
                                     "type": "object",
                                     "properties": {
-                                        "Screening": {
+                                        "Screening_Schema": {
                                             "title": "Screening",
                                             "type": "object",
                                             "properties": {},
@@ -1075,7 +1078,7 @@
                                     "title": "Baseline",
                                     "type": "object",
                                     "properties": {
-                                        "Baseline": {
+                                        "Baseline_Schema": {
                                             "title": "Baseline",
                                             "type": "object",
                                             "properties": {},
@@ -1131,11 +1134,11 @@
                                     "title": "Other",
                                     "type": "object",
                                     "properties": {
-                                        "Other": {
+                                        "Other_Schema": {
                                             "title": "Other",
                                             "type": "object",
                                             "properties": {
-                                                "value": {
+                                                "value_Schema": {
                                                     "title": "value",
                                                     "type": "string"
                                                 }
@@ -1153,95 +1156,12 @@
                     "additionalProperties": false
                 }
             },
-            "required": []
+            "required": [],
+            "title": "Collection Timing"
         },
-        "Participant": {
+        "Participant ": {
             "type": "object",
             "properties": {
-                "Participant": {
-                    "title": "Participant",
-                    "type": "object",
-                    "properties": {
-                        "ParticipantID": {
-                            "title": "ParticipantID",
-                            "type": "string"
-                        },
-                        "ParticipantStatus": {
-                            "title": "ParticipantStatus",
-                            "type": "object",
-                            "anyOf": [
-                                {
-                                    "title": "Dropout",
-                                    "type": "object",
-                                    "properties": {
-                                        "Dropout": {
-                                            "title": "Dropout",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                {
-                                    "title": "Completer",
-                                    "type": "object",
-                                    "properties": {
-                                        "Completer": {
-                                            "title": "Completer",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                {
-                                    "title": "Active",
-                                    "type": "object",
-                                    "properties": {
-                                        "Active": {
-                                            "title": "Active",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                }
-                            ]
-                        }
-                    },
-                    "required": [],
-                    "additionalProperties": false
-                },
-                "Clinical": {
-                    "title": "Clinical",
-                    "type": "object",
-                    "properties": {
-                        "Length of current MDE": {
-                            "title": "Length of current MDE",
-                            "type": "number"
-                        },
-                        "No. of prior MDEs": {
-                            "title": "No. of prior MDEs",
-                            "type": "integer"
-                        },
-                        "Baseline QIDS score": {
-                            "title": "Baseline QIDS score",
-                            "type": "integer"
-                        },
-                        "Age at MDD onset": {
-                            "title": "Age at MDD onset",
-                            "type": "integer"
-                        }
-                    },
-                    "required": [],
-                    "additionalProperties": false
-                },
                 "Risk factors?": {
                     "title": "Risk factors?",
                     "type": "object",
@@ -1252,10 +1172,6 @@
                         },
                         "Parental bonding": {
                             "title": "Parental bonding",
-                            "type": "string"
-                        },
-                        "Personality": {
-                            "title": "Personality",
                             "type": "string"
                         },
                         "Social life": {
@@ -1277,6 +1193,10 @@
                         "Positive Family History": {
                             "title": "Positive Family History",
                             "type": "string"
+                        },
+                        "Personality_Schema": {
+                            "title": "Personality",
+                            "type": "string"
                         }
                     },
                     "required": [],
@@ -1294,7 +1214,7 @@
                                     "title": "UNKNOWN",
                                     "type": "object",
                                     "properties": {
-                                        "UNKNOWN": {
+                                        "UNKNOWN_Schema": {
                                             "title": "UNKNOWN",
                                             "type": "object",
                                             "properties": {},
@@ -1308,7 +1228,7 @@
                                     "title": "YES",
                                     "type": "object",
                                     "properties": {
-                                        "YES": {
+                                        "YES_Schema": {
                                             "title": "YES",
                                             "type": "object",
                                             "properties": {},
@@ -1322,7 +1242,7 @@
                                     "title": "NO",
                                     "type": "object",
                                     "properties": {
-                                        "NO": {
+                                        "NO_Schema": {
                                             "title": "NO",
                                             "type": "object",
                                             "properties": {},
@@ -1334,7 +1254,7 @@
                                 }
                             ]
                         },
-                        "Outcome": {
+                        "Outcome_Schema": {
                             "title": "Outcome",
                             "type": "string"
                         }
@@ -1349,7 +1269,6 @@
                         "Treatment Type": {
                             "title": "Treatment Type",
                             "type": "array",
-                            "uniqueItems": true,
                             "items": {
                                 "type": "object",
                                 "anyOf": [
@@ -1399,7 +1318,7 @@
                                         "title": "CBT",
                                         "type": "object",
                                         "properties": {
-                                            "CBT": {
+                                            "CBT_Schema": {
                                                 "title": "CBT",
                                                 "type": "object",
                                                 "properties": {},
@@ -1427,7 +1346,7 @@
                                         "title": "rTMS",
                                         "type": "object",
                                         "properties": {
-                                            "rTMS": {
+                                            "rTMS_Schema": {
                                                 "title": "rTMS",
                                                 "type": "object",
                                                 "properties": {},
@@ -1455,7 +1374,7 @@
                                         "title": "iTBS",
                                         "type": "object",
                                         "properties": {
-                                            "iTBS": {
+                                            "iTBS_Schema": {
                                                 "title": "iTBS",
                                                 "type": "object",
                                                 "properties": {},
@@ -1483,7 +1402,7 @@
                                         "title": "Pharmacological",
                                         "type": "object",
                                         "properties": {
-                                            "Pharmacological": {
+                                            "Pharmacological_Schema": {
                                                 "title": "Pharmacological",
                                                 "type": "object",
                                                 "properties": {},
@@ -1496,63 +1415,32 @@
                                 ],
                                 "default": {
                                     "DBS ": {}
-                                }
+                                },
+                                "title": "items"
                             }
                         }
                     },
                     "required": [],
                     "additionalProperties": false
                 },
-                "Social": {
-                    "title": "Social",
+                "Participant_Schema": {
+                    "title": "Participant",
                     "type": "object",
                     "properties": {
-                        "ZIP": {
-                            "title": "ZIP",
+                        "ParticipantID_Schema": {
+                            "title": "ParticipantID",
                             "type": "string"
                         },
-                        "Adversity Index": {
-                            "title": "Adversity Index",
-                            "type": "string"
-                        },
-                        "Years of education": {
-                            "title": "Years of education",
-                            "type": "integer"
-                        },
-                        "Occupation": {
-                            "title": "Occupation",
-                            "type": "string"
-                        },
-                        "Children": {
-                            "title": "Children",
-                            "type": "integer"
-                        },
-                        "Country": {
-                            "title": "Country",
-                            "type": "string"
-                        },
-                        "State": {
-                            "title": "State",
-                            "type": "string"
-                        }
-                    },
-                    "required": [],
-                    "additionalProperties": false
-                },
-                "Demographics": {
-                    "title": "Demographics",
-                    "type": "object",
-                    "properties": {
-                        "Race": {
-                            "title": "Race",
+                        "ParticipantStatus_Schema": {
+                            "title": "ParticipantStatus",
                             "type": "object",
                             "anyOf": [
                                 {
-                                    "title": "Other",
+                                    "title": "Dropout",
                                     "type": "object",
                                     "properties": {
-                                        "Other": {
-                                            "title": "Other",
+                                        "Dropout_Schema": {
+                                            "title": "Dropout",
                                             "type": "object",
                                             "properties": {},
                                             "required": [],
@@ -1562,11 +1450,11 @@
                                     "additionalProperties": false
                                 },
                                 {
-                                    "title": "Did not Answer/Unknown",
+                                    "title": "Completer",
                                     "type": "object",
                                     "properties": {
-                                        "Did not Answer/Unknown": {
-                                            "title": "Did not Answer/Unknown",
+                                        "Completer_Schema": {
+                                            "title": "Completer",
                                             "type": "object",
                                             "properties": {},
                                             "required": [],
@@ -1576,53 +1464,11 @@
                                     "additionalProperties": false
                                 },
                                 {
-                                    "title": "Non-Hispanic White",
+                                    "title": "Active",
                                     "type": "object",
                                     "properties": {
-                                        "Non-Hispanic White": {
-                                            "title": "Non-Hispanic White",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                {
-                                    "title": "Non-Hispanic Black",
-                                    "type": "object",
-                                    "properties": {
-                                        "Non-Hispanic Black": {
-                                            "title": "Non-Hispanic Black",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                {
-                                    "title": "Asian/Pacific-Islander",
-                                    "type": "object",
-                                    "properties": {
-                                        "Asian/Pacific-Islander": {
-                                            "title": "Asian/Pacific-Islander",
-                                            "type": "object",
-                                            "properties": {},
-                                            "required": [],
-                                            "additionalProperties": false
-                                        }
-                                    },
-                                    "additionalProperties": false
-                                },
-                                {
-                                    "title": "Hispanic",
-                                    "type": "object",
-                                    "properties": {
-                                        "Hispanic": {
-                                            "title": "Hispanic",
+                                        "Active_Schema": {
+                                            "title": "Active",
                                             "type": "object",
                                             "properties": {},
                                             "required": [],
@@ -1632,11 +1478,75 @@
                                     "additionalProperties": false
                                 }
                             ]
+                        }
+                    },
+                    "required": [],
+                    "additionalProperties": false
+                },
+                "Clinical_Schema": {
+                    "title": "Clinical",
+                    "type": "object",
+                    "properties": {
+                        "Length of current MDE": {
+                            "title": "Length of current MDE",
+                            "type": "number"
                         },
-                        "Age": {
-                            "title": "Age",
+                        "No. of prior MDEs": {
+                            "title": "No. of prior MDEs",
                             "type": "integer"
                         },
+                        "Baseline QIDS score": {
+                            "title": "Baseline QIDS score",
+                            "type": "integer"
+                        },
+                        "Age at MDD onset": {
+                            "title": "Age at MDD onset",
+                            "type": "integer"
+                        }
+                    },
+                    "required": [],
+                    "additionalProperties": false
+                },
+                "Social_Schema": {
+                    "title": "Social",
+                    "type": "object",
+                    "properties": {
+                        "Adversity Index": {
+                            "title": "Adversity Index",
+                            "type": "string"
+                        },
+                        "Years of education": {
+                            "title": "Years of education",
+                            "type": "integer"
+                        },
+                        "ZIP_Schema": {
+                            "title": "ZIP",
+                            "type": "string"
+                        },
+                        "Occupation_Schema": {
+                            "title": "Occupation",
+                            "type": "string"
+                        },
+                        "Children_Schema": {
+                            "title": "Children",
+                            "type": "integer"
+                        },
+                        "Country_Schema": {
+                            "title": "Country",
+                            "type": "string"
+                        },
+                        "State_Schema": {
+                            "title": "State",
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "additionalProperties": false
+                },
+                "Demographics_Schema": {
+                    "title": "Demographics",
+                    "type": "object",
+                    "properties": {
                         "Sexual Orientation": {
                             "title": "Sexual Orientation",
                             "type": "object",
@@ -1673,7 +1583,7 @@
                                     "title": "Homosexual",
                                     "type": "object",
                                     "properties": {
-                                        "Homosexual": {
+                                        "Homosexual_Schema": {
                                             "title": "Homosexual",
                                             "type": "object",
                                             "properties": {},
@@ -1687,7 +1597,7 @@
                                     "title": "Heterosexual",
                                     "type": "object",
                                     "properties": {
-                                        "Heterosexual": {
+                                        "Heterosexual_Schema": {
                                             "title": "Heterosexual",
                                             "type": "object",
                                             "properties": {},
@@ -1701,7 +1611,7 @@
                                     "title": "Bisexual",
                                     "type": "object",
                                     "properties": {
-                                        "Bisexual": {
+                                        "Bisexual_Schema": {
                                             "title": "Bisexual",
                                             "type": "object",
                                             "properties": {},
@@ -1763,7 +1673,7 @@
                                     "title": "Married",
                                     "type": "object",
                                     "properties": {
-                                        "Married": {
+                                        "Married_Schema": {
                                             "title": "Married",
                                             "type": "object",
                                             "properties": {},
@@ -1777,7 +1687,7 @@
                                     "title": "Single",
                                     "type": "object",
                                     "properties": {
-                                        "Single": {
+                                        "Single_Schema": {
                                             "title": "Single",
                                             "type": "object",
                                             "properties": {},
@@ -1801,7 +1711,7 @@
                                     "title": "Female",
                                     "type": "object",
                                     "properties": {
-                                        "Female": {
+                                        "Female_Schema": {
                                             "title": "Female",
                                             "type": "object",
                                             "properties": {},
@@ -1815,7 +1725,7 @@
                                     "title": "Unkown",
                                     "type": "object",
                                     "properties": {
-                                        "Unkown": {
+                                        "Unkown_Schema": {
                                             "title": "Unkown",
                                             "type": "object",
                                             "properties": {},
@@ -1829,7 +1739,7 @@
                                     "title": "Male",
                                     "type": "object",
                                     "properties": {
-                                        "Male": {
+                                        "Male_Schema": {
                                             "title": "Male",
                                             "type": "object",
                                             "properties": {},
@@ -1841,7 +1751,101 @@
                                 }
                             ]
                         },
-                        "Gender": {
+                        "Race_Schema": {
+                            "title": "Race",
+                            "type": "object",
+                            "anyOf": [
+                                {
+                                    "title": "Other",
+                                    "type": "object",
+                                    "properties": {
+                                        "Other_Schema": {
+                                            "title": "Other",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                {
+                                    "title": "Did not Answer/Unknown",
+                                    "type": "object",
+                                    "properties": {
+                                        "Did not Answer/Unknown": {
+                                            "title": "Did not Answer/Unknown",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                {
+                                    "title": "Non-Hispanic White",
+                                    "type": "object",
+                                    "properties": {
+                                        "Non-Hispanic White": {
+                                            "title": "Non-Hispanic White",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                {
+                                    "title": "Non-Hispanic Black",
+                                    "type": "object",
+                                    "properties": {
+                                        "Non-Hispanic Black": {
+                                            "title": "Non-Hispanic Black",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                {
+                                    "title": "Asian/Pacific-Islander",
+                                    "type": "object",
+                                    "properties": {
+                                        "Asian/Pacific-Islander_Schema": {
+                                            "title": "Asian/Pacific-Islander",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                },
+                                {
+                                    "title": "Hispanic",
+                                    "type": "object",
+                                    "properties": {
+                                        "Hispanic_Schema": {
+                                            "title": "Hispanic",
+                                            "type": "object",
+                                            "properties": {},
+                                            "required": [],
+                                            "additionalProperties": false
+                                        }
+                                    },
+                                    "additionalProperties": false
+                                }
+                            ]
+                        },
+                        "Age_Schema": {
+                            "title": "Age",
+                            "type": "integer"
+                        },
+                        "Gender_Schema": {
                             "title": "Gender",
                             "type": "object",
                             "anyOf": [
@@ -1849,7 +1853,7 @@
                                     "title": "Female-to-Male",
                                     "type": "object",
                                     "properties": {
-                                        "Female-to-Male": {
+                                        "Female-to-Male_Schema": {
                                             "title": "Female-to-Male",
                                             "type": "object",
                                             "properties": {},
@@ -1867,7 +1871,7 @@
                                             "title": "Additional category",
                                             "type": "object",
                                             "properties": {
-                                                "category": {
+                                                "category_Schema": {
                                                     "title": "category",
                                                     "type": "string"
                                                 }
@@ -1910,7 +1914,7 @@
                                     "title": "Male",
                                     "type": "object",
                                     "properties": {
-                                        "Male": {
+                                        "Male_Schema": {
                                             "title": "Male",
                                             "type": "object",
                                             "properties": {},
@@ -1924,7 +1928,7 @@
                                     "title": "Female",
                                     "type": "object",
                                     "properties": {
-                                        "Female": {
+                                        "Female_Schema": {
                                             "title": "Female",
                                             "type": "object",
                                             "properties": {},
@@ -1938,7 +1942,7 @@
                                     "title": "Male-to-Female",
                                     "type": "object",
                                     "properties": {
-                                        "Male-to-Female": {
+                                        "Male-to-Female_Schema": {
                                             "title": "Male-to-Female",
                                             "type": "object",
                                             "properties": {},
@@ -1952,7 +1956,7 @@
                                     "title": "Non-conforming",
                                     "type": "object",
                                     "properties": {
-                                        "Non-conforming": {
+                                        "Non-conforming_Schema": {
                                             "title": "Non-conforming",
                                             "type": "object",
                                             "properties": {},
@@ -1968,11 +1972,19 @@
                     "required": [],
                     "additionalProperties": false
                 },
-                "Physical": {
+                "Physical_Schema": {
                     "title": "Physical",
                     "type": "object",
                     "properties": {
-                        "Handidness": {
+                        "Height in Inches": {
+                            "title": "Height in Inches",
+                            "type": "number"
+                        },
+                        "Weight in Pounds": {
+                            "title": "Weight in Pounds",
+                            "type": "number"
+                        },
+                        "Handidness_Schema": {
                             "title": "Handidness",
                             "type": "object",
                             "anyOf": [
@@ -1980,7 +1992,7 @@
                                     "title": "Left",
                                     "type": "object",
                                     "properties": {
-                                        "Left": {
+                                        "Left_Schema": {
                                             "title": "Left",
                                             "type": "object",
                                             "properties": {},
@@ -1994,7 +2006,7 @@
                                     "title": "Right",
                                     "type": "object",
                                     "properties": {
-                                        "Right": {
+                                        "Right_Schema": {
                                             "title": "Right",
                                             "type": "object",
                                             "properties": {},
@@ -2008,7 +2020,7 @@
                                     "title": "Ambidextrous",
                                     "type": "object",
                                     "properties": {
-                                        "Ambidextrous": {
+                                        "Ambidextrous_Schema": {
                                             "title": "Ambidextrous",
                                             "type": "object",
                                             "properties": {},
@@ -2019,21 +2031,14 @@
                                     "additionalProperties": false
                                 }
                             ]
-                        },
-                        "Height in Inches": {
-                            "title": "Height in Inches",
-                            "type": "number"
-                        },
-                        "Weight in Pounds": {
-                            "title": "Weight in Pounds",
-                            "type": "number"
                         }
                     },
                     "required": [],
                     "additionalProperties": false
                 }
             },
-            "required": []
+            "required": [],
+            "title": "Participant "
         }
     },
     "additionalProperties": false,
